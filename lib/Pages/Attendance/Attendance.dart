@@ -13,7 +13,6 @@ class _AttendanceState extends State<Attendance> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: CustomNavbar(),
       appBar: CustomAppBar(
         title: 'Attendance',
       ),

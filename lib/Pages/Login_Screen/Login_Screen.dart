@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:grabview/Pages/Attendance/Attendance.dart';
 import 'package:grabview/Pages/Login_Screen/Reset_Screen.dart';
 import 'package:grabview/Pages/Screens.dart';
-
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -167,7 +165,7 @@ class _LoginPageState extends State<LoginPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('HaVe No AcCoUnT?',style: TextStyle(color: Colors.grey,fontSize: 15),),
+                          Text('Have No Account?',style: TextStyle(color: Colors.grey,fontSize: 15),),
                           SizedBox(width: 10,),
                           GestureDetector(
                             onTap: (){
@@ -176,14 +174,14 @@ class _LoginPageState extends State<LoginPage> {
                                   MaterialPageRoute(
                                       builder: (c) =>  SignUp()));
                             },
-                              child: Text('SiGnUp',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold,fontSize: 16),)),
+                              child: Text('SignUp',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold,fontSize: 16),)),
                         ],
                       ),
                       SizedBox(height: 10,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text('FoRgOt PaSsWoRd?',style: TextStyle(color: Colors.grey,fontSize: 15),),
+                          Text('Forgot Password?',style: TextStyle(color: Colors.grey,fontSize: 15),),
                           SizedBox(width: 10,),
                           GestureDetector(
                             onTap: (){
@@ -192,10 +190,9 @@ class _LoginPageState extends State<LoginPage> {
                                   MaterialPageRoute(
                                       builder: (c) =>  Reset()));
                             },
-                              child: Text('ReSeT nOw',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold,fontSize: 16),)),
+                              child: Text('Reset now',style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold,fontSize: 16),)),
                         ],
                       ),
-
                     ],
                   ),
                 ),

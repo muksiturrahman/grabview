@@ -12,13 +12,14 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.orange,
+      elevation: 0,
+      backgroundColor: Colors.white,
       centerTitle: true,
       title: Text(
         title,
-        style: Theme.of(context).textTheme.headline4!.copyWith(color: Colors.white),
+        style: Theme.of(context).textTheme.headline4!.copyWith(color: Colors.orange),
       ),
-      iconTheme: const IconThemeData(color: Colors.white),
+      iconTheme: const IconThemeData(color: Colors.orange),
       actions: [
         IconButton(
             icon: const Icon(Icons.person_pin,size: 35,),
